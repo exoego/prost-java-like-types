@@ -1,0 +1,5 @@
+# import を1項目ごとに分割することでconflictを起きにくく＆解決しやすくする.
+# ただし unstable なので cargo +nightly fmt を使う必要がある.
+unstable_features = true
+imports_granularity = "Item"
+group_imports = "StdExternalCrate"
