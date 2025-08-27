@@ -220,7 +220,7 @@ mod tests {
         let some_de: Optional<i32> = serde_json::from_str(&some_json).unwrap();
         let none_de: Optional<i32> = serde_json::from_str(&none_json).unwrap();
 
-        // assert_eq!(some, some_de);
+        assert_eq!(some, some_de);
         assert_eq!(none, none_de);
     }
 
